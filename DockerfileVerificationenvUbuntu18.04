@@ -13,8 +13,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	vim bash-completion sudo
 
 # static analysis, style checking etc packages go below
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
-	cmake socat cppcheck gcov gprof
 
 # user setup
 RUN useradd docker -d /home/docker -m -s /bin/bash &&\
